@@ -1,0 +1,28 @@
+.login-form{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    padding: 50px;
+    border: 1px solid black;
+}
+.login-btn{
+    
+    display: block;
+    background-color: skyblue;
+    padding: 5px 46%;
+    font-weight: bold;
+}
+.fb-login-btn{
+    display: block;
+    padding: 5px 18%;
+    background-color: skyblue;
+    margin-left: 25%;
+    border-radius: 25px;
+}
+.google-login-btn{
+    display: block;
+    padding: 5px 20.5%;
+    background-color: skyblue;
+    margin-left: 25%;
+    border-radius: 25px;
+}
