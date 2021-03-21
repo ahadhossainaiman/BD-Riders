@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "tittle": "BIKE",
+      "imgUrl":
+        "https://img.freepik.com/free-vector/man-ride-naked-bike-cartoon-speed-motorcycle-illustration_261104-19.jpg?size=664&ext=jpg",
+        "member":"1",
+        "price":"20"
+    },
+    {
+      "id": 2,
+      "tittle": "CAR",
+      "imgUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJqPD82u0K2yN3XhbSmaB3_saHyVxXkwpgew&usqp=CAU",
+        "member":"3",
+        "price":"60"
+    },
+    {
+      "id": 3,
+      "tittle": "BUS",
+      "imgUrl":
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBn2_APqcLIZ0dEBD_6Rvk3H5NEUEC0cYTVw&usqp=CAU",
+        "member":"30",
+        "price":"420"
+    },
+    {
+      "id": 4,
+      "tittle": "TRAIN",
+      "imgUrl":
+        "https://thumbs.dreamstime.com/b/super-streamlined-high-speed-train-isolated-white-background-concept-railway-tourism-transportation-railroad-travel-vector-96912472.jpg",
+        "member":"8",
+        "price":"235"
+    }
+]

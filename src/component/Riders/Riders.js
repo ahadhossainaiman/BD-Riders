@@ -10,7 +10,7 @@ const Riders = (props) => {
 }
   return (
     <>
-      <Col lg={3} md={3} sm={12} style={{marginTop: '10%',width:'30rem'}}>
+      <Col lg={3} md={2} sm={8} style={{marginTop: '10%',width:'25rem'}}>
             <Card bg='light' style={{borderRadius:'10px',border:'1px solid black'}}>
                 <Card.Img variant="top" src={imgUrl} style={{width:'auto'}}/>
                 <Card.Body>

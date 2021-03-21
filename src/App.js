@@ -16,7 +16,7 @@ export const UserContext = createContext()
 function App() {
   const [loggedInUser,setLoggedInUser] = useState({})
   return (
-   <>
+   <div className="bg-image">
    <UserContext.Provider value={[loggedInUser,setLoggedInUser]}>
    <Router>
           <Header/>
@@ -36,7 +36,7 @@ function App() {
           </Switch>
       </Router>
       </UserContext.Provider>
-   </>
+   </div>
   );
 }
 

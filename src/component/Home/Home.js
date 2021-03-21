@@ -9,7 +9,7 @@ const Home = () => {
     {
       title: "BIKE",
       imgUrl:
-        "https://images.vexels.com/media/users/3/200078/isolated/preview/b60850f12f828c75062f950afe57c6ac-red-motorcycle-isometric-by-vexels.png",
+        "https://img.freepik.com/free-vector/man-ride-naked-bike-cartoon-speed-motorcycle-illustration_261104-19.jpg?size=664&ext=jpg",
     },
     {
       title: "CAR",
@@ -29,17 +29,14 @@ const Home = () => {
   ];
   
   return (
-    <div className="bg-image">
-      {/* <div className="container-fluid"> */}
-        <Container>
+    <div>
+        <Container className="container-fluid" >
           <Row>
             {riders.map((rider) => (
               <Riders rider={rider}></Riders>
             ))}
             </Row>
           </Container>
-        
-      {/* </div> */}
     </div>
   );
 };

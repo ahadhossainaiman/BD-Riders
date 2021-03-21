@@ -13,13 +13,11 @@ const Header = () => {
         <Nav className="ml-auto">
         <Nav.Link href="/home">Home</Nav.Link>
           <Nav.Link href="/login">Destination</Nav.Link>
-          <Nav.Link href="/blog">Blog</Nav.Link>
           <Nav.Link href="/contact">Contact</Nav.Link>
-        </Nav>
-        <Link to="/login">{
-        loggedInUser.isSignedIn === true ||  loggedInUser.success ===true? <h6>{loggedInUser.name || loggedInUser.displayName}</h6>:<Button variant="outline-primary" className="ml-5">Login</Button>
+          <Link to="/login">{
+        loggedInUser.isSignedIn === true ||  loggedInUser.success ===true? <h6 style={{color:'red',padding:'10px',border:'1px solid black'}}>{loggedInUser.name || loggedInUser.displayName}</h6>:<Button variant="outline-primary" className="ml-1">Login</Button>
         }</Link>
-          
+        </Nav> 
       </Navbar>
     </div>
   );

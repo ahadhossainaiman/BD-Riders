@@ -3,7 +3,7 @@ import { Button, Form } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router-dom';
 import { UserContext } from '../../App';
 import './Login.css'
-import { createUserWithEmailAndPassword, handleFbSignIn, handleGoogleSignIn, handleSignOut, initializeLoginFramework, signInWithEmailAndPassword } from './LoginManager';
+import { createUserWithEmailAndPassword, handleGoogleSignIn, handleSignOut, initializeLoginFramework, signInWithEmailAndPassword } from './LoginManager';
 
 
 
@@ -30,14 +30,7 @@ function Login() {
         handleResponse(res, true);
       })
   }
-
-  const fbSignIn = () => {
-      handleFbSignIn()
-      .then(res => {
-        handleResponse(res, true);
-      })
-
-  }
+  
 
   const signOut = () => {
       handleSignOut()
@@ -89,14 +82,13 @@ function Login() {
   }
   
 
-
+console.log(user)
 
   return (
 <>
-
 <Form onSubmit={handleSubmit} className='login-form'>
     {
-        newUser === true? <h2>Create and Account</h2> : <h2>Login Account</h2> 
+        newUser === true? <h4>Create and Account</h4> : <h4>Login Account</h4> 
     }
   <Form.Group controlId="formBasicEmail">
   <input type="checkbox" onChange={() => setNewUser(!newUser)} name="newUser" id=""/>
@@ -116,13 +108,14 @@ function Login() {
   <Form.Group controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
-  <input type="submit" className='login-btn' value={newUser === true ? 'Sign up' : 'Login'}/>
+  <input type="submit" className='login-btn' value={newUser === true ? 'Sign up' : 'Login'}/>   
 </Form>  
-      <h5>{user.error}</h5>
+  <br/>
+  <br/>
+         <p style={{color:'red',textAlign:'center'}}>{loggedInUser.error}</p>    
 <br/>
-<h4 style={{marginLeft:'40%'}}>------------or-----------</h4>
+<h3 style={{textAlign:'center',color:'white'}}>OR</h3>
 <hr/>
-<br/>
         { 
         user.isSignedIn ? <button onClick={signOut} className='google-login-btn'>Sign Out</button> :
         <button onClick={googleSignIn} className='google-login-btn'>Google Sign In</button>
